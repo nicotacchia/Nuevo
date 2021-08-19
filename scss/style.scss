@@ -1,0 +1,384 @@
+@import "operaciones";
+
+
+.header__logo {
+    width: 150px;
+    height: 150px;
+}
+
+.header__nav {
+    float: right;
+}
+
+.titulo__principal {
+    font-family: 'PT Sans Caption', sans-serif;
+    text-align: center;
+}
+
+.titulo__secundario {
+    font-family: "PT Sans Caption", sans-serif;
+    text-align: center;
+}
+
+
+.gallery__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 500px;
+    padding: 20px;
+    grid-gap: 50px;
+}
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery__item {
+    position: relative;
+}
+
+.gallery__tittle {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    background: linear-gradient(rgba(225, 225, 225, 0), rgba(0, 0, 0, 1));
+    font-family: "PT Sans Caption", sans-serif;
+    font-size: 25px;
+}
+
+.gallery__links {
+    text-decoration: none;
+    color: blanchedalmond;
+}
+
+div {
+    h3 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 50px;
+        font-style: italic;
+        text-align: center;
+    }
+
+    p {
+        font-family: "PT Sans Caption", sans-serif;
+        text-align: center;
+    }
+
+}
+
+.gallery__container--modificado {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+    padding: 20px;
+    grid-gap: 50px;
+}
+
+.div__nosotros {
+    background-color:$colortitulo;
+       font-size: $alto;
+
+}
+
+.div__nosotroscolor {
+    color: white;
+}
+
+.div__nosotros--modificado {
+    background-color: rgb(240, 195, 82);
+}
+
+.gallery__tittle {
+    position: absolute;
+    bottom: 20;
+    color: white;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    background: linear-gradient(rgba(225, 225, 225, 0), rgba(0, 0, 0, 1));
+    font-family: "PT Sans Caption", sans-serif;
+    font-size: 15px;
+}
+
+.footer__logos {
+    height: 30px;
+    width: 30px;
+}
+
+.footer_ul {
+    list-style: none;
+
+}
+
+.footer__h5 {
+    background-color: rgb(11, 11, 80);
+
+}
+
+.footer__h6 {
+    background-color: rgb(240, 195, 82);
+}
+
+.espacio {
+    background-color: $colortitulo;
+}
+
+.div__mision {
+    background-color: $colortitulo;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+
+.div__misionvision {
+    background-color: rgb(240, 195, 82);
+    font-size: 20px;
+}
+
+.somos {
+    text-align: center;
+    font-size: 15px;
+}
+
+.contenido {
+    text-align: center;
+    font-style: italic;
+    font-size: 15px;
+}
+
+
+.gallery__container-m {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px;
+    padding: 20px;
+    grid-gap: 50px;
+    border-style: double;
+}
+
+@media only screen and (max-width: 500px) {
+
+    .gallery__container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 500px;
+        padding: 20px;
+        grid-gap: 50px;
+    }
+
+    .gallery__container-m {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 300px;
+        padding: 20px;
+        grid-gap: 50px;
+        border-style: double;
+    }
+
+
+    .gallery__container--modificado {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 200px;
+        padding: 20px;
+        grid-gap: 50px;
+
+    }
+}
+
+@media only screen and (min-width: 740px) {
+
+    .gallery__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 500px;
+        padding: 20px;
+        grid-gap: 50px;
+    }
+
+    .gallery__container-m {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 300px;
+        padding: 20px;
+        grid-gap: 50px;
+        border-style: double;
+    }
+
+
+    .gallery__container--modificado {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 200px;
+        padding: 20px;
+        grid-gap: 50px;
+
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .gallery__container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 500px;
+        padding: 20px;
+        grid-gap: 50px;
+    }
+
+    .gallery__container-m {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 300px;
+        padding: 20px;
+        grid-gap: 50px;
+        border-style: double;
+    }
+
+
+    .gallery__container--modificado {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 200px;
+        padding: 20px;
+        grid-gap: 50px;
+
+    }
+}
+.Aparecer {
+    animation-duration: 2s;
+    animation-name: Aparecer;
+}
+
+@keyframes Aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.footer {
+	width: 100%;
+	background: #00121b;
+	display: block;
+ }
+
+ .inner-footer {
+	 width: 95%;
+	 margin: auto;
+	 padding: 30px 10px;
+	 display: flex;
+	 flex-wrap: wrap;
+	 box-sizing: border-box;
+	 justify-content: center;
+ }
+
+.footer-items {
+	width: 25%;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	color: #fff;
+}
+
+.footer-items p {
+	font-size: 14px;
+	text-align: justify;
+	line-height: 25px;
+	color: #fff;
+}
+
+.footer-items h2 {
+	color: #fff;
+}
+
+.border1 {
+	height: 3px;
+	width: 40px;
+	background: #ff9800;
+	color: #ff9800;
+	background-color: #ff9800;
+	border: 0px;
+}
+
+.footer__ul {
+	list-style: none;
+	color: #fff;
+	font-size: 15px;
+	letter-spacing: 0.5px;	
+ }
+
+.footer__ul a {
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	transition: 0.3s;
+}
+
+.footer__ul a:hover {
+	color: #ff9800;
+}
+
+.footer__ul li {
+	margin: 10px 0;
+	height: 25px;
+}
+
+.footer__li i {
+	margin-right: 20px;
+}
+
+.social-media {
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	font-size: 20px;
+}
+
+.social-media a {
+	text-decoration: none;
+}
+
+.social-media img {
+	height: 25px;
+	width: 25px;
+	margin: 20px 10px;
+	padding: 4px;
+	color: #fff;
+	transition: 0.5s;
+}
+
+.social-media img:hover {
+	transform: scale(1.5);
+}
+
+.footer-bottom {
+	padding: 10px;
+	background: #00121b;
+	color: #fff;
+	font-size: 12px;
+	text-align: center;
+}
+
+/* Vista tablet */
+
+@media screen and (max-width: 1275px) {
+	.footer-items {
+		width: 50%;
+	}
+}
+
+/* vista mobile */
+
+@media screen and (max-width: 660px) {
+	.footer-items {
+		width: 100%;
+	}
+}
