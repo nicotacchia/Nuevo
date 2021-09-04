@@ -6,8 +6,9 @@
   float: right; }
 
 .titulo__principal {
-  font-family: 'PT Sans Caption', sans-serif;
-  text-align: center; }
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 50px; }
 
 .titulo__secundario {
   font-family: "PT Sans Caption", sans-serif;
@@ -124,6 +125,24 @@ div p {
   grid-gap: 50px;
   border-style: double; }
 
+.separar__div {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.grid-contenedor {
+  display: grid;
+  margin: 40px 0 40px 0;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(3, 300px);
+  gap: 1px 1px;
+  text-align: center;
+  justify-content: stretch;
+  font-size: 1.5rem;
+  padding: 5px; }
+
+.texto {
+  align-self: center; }
+
 @media only screen and (max-width: 500px) {
   .gallery__container {
     display: grid;
@@ -142,6 +161,13 @@ div p {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: 200px;
+    padding: 20px;
+    grid-gap: 50px; }
+  .grid-contenedor {
+    display: grid;
+    margin: 40px 0 40px 0;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 500px;
     padding: 20px;
     grid-gap: 50px; } }
 
@@ -164,7 +190,17 @@ div p {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 200px;
     padding: 20px;
-    grid-gap: 50px; } }
+    grid-gap: 50px; }
+  .grid-contenedor {
+    display: grid;
+    margin: 40px 0 40px 0;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 300px);
+    gap: 1px 1px;
+    text-align: center;
+    justify-content: stretch;
+    font-size: 1.5rem;
+    padding: 5px; } }
 
 @media only screen and (min-width: 1000px) {
   .gallery__container {
@@ -185,7 +221,17 @@ div p {
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 200px;
     padding: 20px;
-    grid-gap: 50px; } }
+    grid-gap: 50px; }
+  .grid-contenedor {
+    display: grid;
+    margin: 40px 0 40px 0;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(3, 300px);
+    gap: 1px 1px;
+    text-align: center;
+    justify-content: stretch;
+    font-size: 1.5rem;
+    padding: 5px; } }
 
 .Aparecer {
   animation-duration: 2s;
@@ -292,3 +338,12 @@ div p {
 @media screen and (max-width: 660px) {
   .footer-items {
     width: 100%; } }
+
+nav ul li {
+  padding: 25px; }
+
+nav ul li a:hover {
+  background-color: gray; }
+
+body {
+  font-family: 'Montserrat', sans-serif; }
