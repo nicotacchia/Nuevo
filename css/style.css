@@ -104,6 +104,13 @@ div p {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: white; }
 
+.div__contacto {
+  background-color: #00121b;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase; }
+
 .div__misionvision {
   background-color: #f0c352;
   font-size: 20px; }
@@ -143,7 +150,47 @@ div p {
 .texto {
   align-self: center; }
 
+form {
+  width: 450px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  border-radius: 7px;
+  margin-bottom: 50px; }
+
+.form__h2 {
+  color: white;
+  text-align: center;
+  margin: 0px;
+  font-size: 30px;
+  margin-bottom: 20px; }
+
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  border: none; }
+
+textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%; }
+
+#boton {
+  background: #31384a;
+  color: white;
+  padding: 20px; }
+
+#boton:hover {
+  cursor: pointer; }
+
 @media only screen and (max-width: 500px) {
+  form {
+    width: 100%; }
   .gallery__container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
