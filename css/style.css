@@ -2,9 +2,6 @@
   width: 150px;
   height: 150px; }
 
-.header__nav {
-  float: right; }
-
 .titulo__principal {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
@@ -154,9 +151,9 @@ form {
   width: 450px;
   margin: auto;
   background: rgba(0, 0, 0, 0.4);
-  padding: 10px 20px;
+  padding: 15px 25px;
   box-sizing: border-box;
-  margin-top: 10px;
+  margin-top: 15px;
   border-radius: 7px;
   margin-bottom: 50px; }
 
@@ -170,8 +167,9 @@ form {
 input,
 textarea {
   width: 100%;
-  margin-bottom: 20px;
-  padding: 7px;
+  margin-bottom: 30px;
+  padding: 10px;
+  margin: 8px;
   box-sizing: border-box;
   border: none; }
 
@@ -188,7 +186,24 @@ textarea {
 #boton:hover {
   cursor: pointer; }
 
+@media only screen and (max-width: 400px) {
+  .titulo__principal {
+    font-size: 20px;
+    font-weight: bold; }
+  .grid-contenedor {
+    display: grid;
+    margin: 5px;
+    grid-template-columns: 1, 1fr;
+    grid-auto-rows: 500px;
+    padding: 5px;
+    grid-gap: 5px;
+    font-size: 20px; } }
+
 @media only screen and (max-width: 500px) {
+  nav ul li {
+    padding: auto;
+    margin: auto;
+    max-width: 100%; }
   form {
     width: 100%; }
   .gallery__container {
@@ -212,13 +227,19 @@ textarea {
     grid-gap: 50px; }
   .grid-contenedor {
     display: grid;
-    margin: 40px 0 40px 0;
+    margin: auto;
     grid-template-columns: repeat(1, 1fr);
-    grid-auto-rows: 500px;
-    padding: 20px;
-    grid-gap: 50px; } }
+    grid-auto-rows: auto;
+    padding: auto;
+    grid-gap: auto; }
+  .carrusel__img {
+    height: 480px; } }
 
-@media only screen and (min-width: 740px) {
+@media only screen and (min-width: 768px) {
+  nav ul li {
+    padding: auto;
+    margin: auto;
+    max-width: 100%; }
   .gallery__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -241,13 +262,15 @@ textarea {
   .grid-contenedor {
     display: grid;
     margin: 40px 0 40px 0;
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(2, 2fr);
     grid-template-rows: repeat(2, 300px);
     gap: 1px 1px;
     text-align: center;
     justify-content: stretch;
-    font-size: 1.5rem;
-    padding: 5px; } }
+    font-size: 1rem;
+    padding: 5px; }
+  .carrusel__img {
+    height: 480px; } }
 
 @media only screen and (min-width: 1000px) {
   .gallery__container {
@@ -278,7 +301,9 @@ textarea {
     text-align: center;
     justify-content: stretch;
     font-size: 1.5rem;
-    padding: 5px; } }
+    padding: 5px; }
+  .carrusel__img {
+    height: 500px; } }
 
 .Aparecer {
   animation-duration: 2s;
@@ -387,7 +412,8 @@ textarea {
     width: 100%; } }
 
 nav ul li {
-  padding: 25px; }
+  padding: 25px;
+  max-width: 100%; }
 
 nav ul li a:hover {
   background-color: gray; }
